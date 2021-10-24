@@ -1,0 +1,171 @@
+.productlist {
+    &__header {
+        position: relative;
+        background-color: #fff;
+        z-index: 1000;
+        padding: 1rem 0;
+        width: 100%;
+        font-size: 1rem;
+        &-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        &-btn {
+            display: inline-flex;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+            touch-action: manipulation;
+            background-image: none;
+            white-space: nowrap;
+            user-select: none;
+            line-height: 1;
+            cursor: pointer;
+            transition: background-color 100ms cubic-bezier(0.5, 0, 0.2, 1) 0s,
+                color 100ms cubic-bezier(0.5, 0, 0.2, 1) 0s,
+                border-color 100ms cubic-bezier(0.5, 0, 0.2, 1) 0s;
+            vertical-align: middle;
+            font-size: 14px;
+            border-radius: 36px;
+            border: 1px solid $primary-color;
+            height: 36px;
+            text-decoration: none;
+            text-align: center;
+            padding: 0px 16px;
+            font-weight: 400;
+            color: $primary-color;
+            background-color: rgb(255, 255, 255);
+            &:hover {
+                background-color: $primary-color;
+                color: rgb(255, 255, 255);
+            }
+        }
+        &-selectbox {
+            position: relative;
+            margin-right: 0.4rem;
+            select {
+                width: auto;
+                height: 35px;
+                background-color: #ffffff;
+                color: $secondary-color;
+                -webkit-appearance: none;
+                border: 1px solid rgb(148, 148, 148);
+                outline: none;
+                padding-left: 5px;
+                border-radius: 4px;
+                font-size: 1rem;
+                cursor: pointer;
+                padding-right: 28px;
+            }
+            select option {
+                background-color: rgba(184, 183, 183, 0.26);
+                color: #000;
+            }
+
+            .chevron {
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                text-align: center;
+                line-height: 35px;
+                width: 30px;
+                height: 100%;
+                color: #878281;
+                pointer-events: none;
+            }
+        }
+        &-search {
+            margin-right: 0.5rem;
+            .search-box {
+                border: 1px solid rgb(148, 148, 148);
+                padding: 6px 11px;
+                border-radius: 4px;
+                position: relative;
+                input {
+                    width: 13rem;
+                }
+            }
+            .search-button {
+                width: 2rem;
+                height: 34px;
+                background: #d92228;
+                color: #fff;
+                position: absolute;
+                right: -1px;
+                top: -1px;
+                border-radius: 1px 4px 4px 1px;
+                @include transitionsm;
+                &:hover {
+                    background-color: darkred;
+                }
+            }
+        }
+    }
+}
+
+.srp-view-toggle {
+    display: inline-block;
+}
+
+.btn-group .active {
+    background-color: #333f48;
+    color: #fff;
+    border-color: #333f48;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    cursor: default;
+}
+.btn-group .left-button {
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+    border-right: 0px;
+    padding: 0px 12px 0 16px;
+}
+.btn-group button {
+    display: inline-flex;
+    align-items: center;
+    color: #333333;
+    background-color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    border: 1px solid #333333;
+    height: 36px;
+    cursor: pointer;
+    outline: none;
+    width: 75px;
+}
+
+.btn-group .right-button {
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+    padding: 0px 8px 0 12px;
+}
+
+.btn-group button {
+    display: inline-flex;
+    align-items: center;
+    color: #333333;
+    background-color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    border: 1px solid #333333;
+    height: 36px;
+    cursor: pointer;
+    outline: none;
+    width: 75px;
+}
+// Map
+.responsive-map {
+    overflow: hidden;
+    padding-bottom: 78.25%;
+    position: relative;
+    height: 0;
+}
+.responsive-map iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
