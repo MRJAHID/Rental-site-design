@@ -1,0 +1,23 @@
+.section-title {
+    font-size: 24px;
+    font-weight: 400;
+    color: $secondary-color;
+    margin: 0;
+    &::after,
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 30px;
+        height: 2px;
+        background: #222;
+    }
+}
+.section-subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: serif;
+    font-style: italic;
+    color: #878787;
+    font-weight: 400;
+    margin-top: 0;
+}
