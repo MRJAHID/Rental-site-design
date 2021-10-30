@@ -168,3 +168,19 @@
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
+.btn-primary {
+    color: #fff;
+    background-color: #3490dc;
+    border-color: #3490dc;
+}
+.btn-primary.focus,
+.btn-primary:focus,
+.btn-primary:hover {
+    color: #fff;
+    background-color: #227dc7;
+    border-color: #2176bd;
+}
+.text-title {
+    font-size: 1rem;
+    font-weight: 400;
+}
