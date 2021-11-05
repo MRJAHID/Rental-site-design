@@ -2,6 +2,9 @@
     font-size: 24px;
     font-weight: 400;
     color: $secondary-color;
+    @include breakpoint-down(small) {
+        font-size: 1rem;
+    }
     margin: 0;
     &::after,
     &::before {

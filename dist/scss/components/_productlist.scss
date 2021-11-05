@@ -9,6 +9,9 @@
         &-container {
             display: flex;
             justify-content: space-between;
+            @include breakpoint-down(small) {
+                flex-wrap: wrap;
+            }
         }
         &-btn {
             display: inline-flex;

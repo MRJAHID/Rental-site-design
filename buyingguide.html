@@ -28,9 +28,13 @@
     <body class="antialiased bg-white">
         <!-- ======= Header : START =======-->
         <header class="container px-2 mx-auto header border-b border-gray-200">
-            <div class="header__container flex items-center justify-between h-16">
+            <div class="header__container flex items-center justify-between h-12 md:h-16">
                 <div class="header__left flex items-center">
-                    <picture class="header__logo mr-5">
+                    <picture class="header__logo mr-5 flex items-center">
+                        <button class="block md:hidden px-3 pt-1">
+                            <i class="fas fa-bars" style="color: rgb(82 76 76)"></i>
+                        </button>
+
                         <svg data-tid="rentals-logo" width="144" height="25" viewBox="0 0 144 25">
                             <path
                                 fill="#D92228"
@@ -39,7 +43,7 @@
                             ></path>
                         </svg>
                     </picture>
-                    <nav class="header__nav">
+                    <nav class="header__nav hidden md:inline-block">
                         <ul class="flex items-center">
                             <li><a href="#">Buy</a></li>
                             <li><a href="#">Sell</a></li>
@@ -51,12 +55,15 @@
                     </nav>
                 </div>
                 <div class="header__right flex">
-                    <div class="header__login">
+                    <div class="header__login hidden md:block">
                         <a href="#">Login</a>
                     </div>
-                    <div class="header__signup">
+                    <div class="header__signup hidden md:block">
                         <a href="#">Signup</a>
                     </div>
+                    <button class="flex mobile_profile-icon md:hidden px-3 pt-1">
+                        <i class="far fa-user"></i>
+                    </button>
                 </div>
             </div>
         </header>
@@ -205,6 +212,246 @@
                 </div>
             </div>
         </main>
+        <!-- ========== Popular Search Section : START ========== -->
+        <section class="mx-auto container">
+            <div class="popular__search">
+                <div class="text-center mb-4">
+                    <h3 class="section-title flex items-center justify-center">
+                        <span class="mx-2">BROWSE PROPERTIES BY LOCALITIES</span>
+                    </h3>
+                    <!-- <span class="section-subtitle"
+                            >Buy kitchen essential cookware, frypan, home décor products, home appliance
+                            from iferi.</span
+                        > -->
+                </div>
+                <div class="flex w-full">
+                    <div class="w-full">
+                        <h2
+                            style="
+                                font-weight: 400;
+                                font-size: 0.9rem;
+                                border-bottom: 0.1rem solid #999;
+                                padding: 0.5rem 0;
+                                line-height: 1.38;
+                            "
+                        >
+                            Properties in top cities
+                        </h2>
+
+                        <ul class="flex flex-wrap pl-0">
+                            <li class="w-1/3 md:w-1/4">
+                                <a href="/search/?city=1" class="cs-link">Dhaka (2419) </a>
+                            </li>
+
+                            <li class="w-1/3 md:w-1/4">
+                                <a href="/search/?city=9" class="cs-link">Gazipur (104) </a>
+                            </li>
+
+                            <li class="w-1/3 md:w-1/4">
+                                <a href="/search/?city=4" class="cs-link">Chittagong (90) </a>
+                            </li>
+
+                            <li class="w-1/3 md:w-1/4">
+                                <a href="/search/?city=10" class="cs-link">Narayanganj (42) </a>
+                            </li>
+
+                            <li class="w-1/3 md:w-1/4">
+                                <a href="/search/?city=5" class="cs-link">Sylhet (34) </a>
+                            </li>
+
+                            <li class="w-1/3 md:w-1/4">
+                                <a href="/search/?city=6" class="cs-link">Rajshahi (33) </a>
+                            </li>
+
+                            <li class="w-1/3 md:w-1/4">
+                                <a href="/search/?city=7" class="cs-link">Rangpur (27) </a>
+                            </li>
+
+                            <li class="w-1/3 md:w-1/4">
+                                <a href="/search/?city=18" class="cs-link">Mymensingh (24) </a>
+                            </li>
+
+                            <li class="w-1/3 md:w-1/4">
+                                <a href="/search/?city=11" class="cs-link">Comilla (15) </a>
+                            </li>
+
+                            <li class="w-1/3 md:w-1/4">
+                                <a href="/search/?city=3" class="cs-link">Khulna (13) </a>
+                            </li>
+
+                            <li class="w-1/3 md:w-1/4">
+                                <a href="/search/?city=16" class="cs-link">Coxs Bazar (11) </a>
+                            </li>
+
+                            <li class="w-1/3 md:w-1/4">
+                                <a href="/search/?city=17" class="cs-link">Tangail (9) </a>
+                            </li>
+
+                            <li class="w-1/3 md:w-1/4">
+                                <a href="/search/?city=12" class="cs-link">Bogra (4) </a>
+                            </li>
+
+                            <li class="w-1/3 md:w-1/4">
+                                <a href="/search/?city=14" class="cs-link">Kuakata (3) </a>
+                            </li>
+
+                            <li class="w-1/3 md:w-1/4">
+                                <a href="/search/?city=8" class="cs-link">Barisal (3) </a>
+                            </li>
+
+                            <li class="w-1/3 md:w-1/4">
+                                <a href="/search/?city=19" class="cs-link">Naogaon (2) </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex w-full">
+                    <div class="w-full">
+                        <h2
+                            style="
+                                font-weight: 400;
+                                font-size: 0.9rem;
+                                border-bottom: 0.1rem solid #999;
+                                padding: 0.5rem 0;
+                                line-height: 1.38;
+                            "
+                        >
+                            Properties in top cities
+                        </h2>
+
+                        <ul class="flex flex-wrap pl-0">
+                            <li class="w-1/3 md:w-1/4">
+                                <a href="/search/?city=1" class="cs-link">Dhaka (2419) </a>
+                            </li>
+
+                            <li class="w-1/3 md:w-1/4">
+                                <a href="/search/?city=9" class="cs-link">Gazipur (104) </a>
+                            </li>
+
+                            <li class="w-1/3 md:w-1/4">
+                                <a href="/search/?city=4" class="cs-link">Chittagong (90) </a>
+                            </li>
+
+                            <li class="w-1/3 md:w-1/4">
+                                <a href="/search/?city=10" class="cs-link">Narayanganj (42) </a>
+                            </li>
+
+                            <li class="w-1/3 md:w-1/4">
+                                <a href="/search/?city=5" class="cs-link">Sylhet (34) </a>
+                            </li>
+
+                            <li class="w-1/3 md:w-1/4">
+                                <a href="/search/?city=6" class="cs-link">Rajshahi (33) </a>
+                            </li>
+
+                            <li class="w-1/3 md:w-1/4">
+                                <a href="/search/?city=7" class="cs-link">Rangpur (27) </a>
+                            </li>
+
+                            <li class="w-1/3 md:w-1/4">
+                                <a href="/search/?city=18" class="cs-link">Mymensingh (24) </a>
+                            </li>
+
+                            <li class="w-1/3 md:w-1/4">
+                                <a href="/search/?city=11" class="cs-link">Comilla (15) </a>
+                            </li>
+
+                            <li class="w-1/3 md:w-1/4">
+                                <a href="/search/?city=3" class="cs-link">Khulna (13) </a>
+                            </li>
+
+                            <li class="w-1/3 md:w-1/4">
+                                <a href="/search/?city=16" class="cs-link">Coxs Bazar (11) </a>
+                            </li>
+
+                            <li class="w-1/3 md:w-1/4">
+                                <a href="/search/?city=17" class="cs-link">Tangail (9) </a>
+                            </li>
+
+                            <li class="w-1/3 md:w-1/4">
+                                <a href="/search/?city=12" class="cs-link">Bogra (4) </a>
+                            </li>
+
+                            <li class="w-1/3 md:w-1/4">
+                                <a href="/search/?city=14" class="cs-link">Kuakata (3) </a>
+                            </li>
+
+                            <li class="w-1/3 md:w-1/4">
+                                <a href="/search/?city=8" class="cs-link">Barisal (3) </a>
+                            </li>
+
+                            <li class="w-1/3 md:w-1/4">
+                                <a href="/search/?city=19" class="cs-link">Naogaon (2) </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========== Popular Search Section : END ========== -->
+
+        <!-- ========== How it works Section : START ========== -->
+        <section class="">
+            <div class="h-how-it-work pb-6">
+                <h3 class="text-center text-white font-normal uppercase mt-5 mb-6">
+                    Why Use RENTAL.COM
+                </h3>
+                <div class="flex flex-wrap container">
+                    <div class="w-1/2 md:w-1/4 py-2 md:py-0 px-4">
+                        <img
+                            src="https://www.bdto-let.com/images/advance_search.svg"
+                            alt=""
+                            class="mx-auto block"
+                        />
+                        <h5 class="text-center text-white my-2 text-lg md:text-xl">
+                            Find perfect property
+                        </h5>
+                        <p class="text-center text-white text-sm md:text-base">
+                            find the best property according your need in your area
+                        </p>
+                    </div>
+                    <div class="w-1/2 md:w-1/4 py-2 md:py-0 px-4">
+                        <img
+                            src="https://www.bdto-let.com/images/direct_contact.svg"
+                            alt=""
+                            class="mx-auto block"
+                        />
+                        <h5 class="text-center text-white my-2 text-lg md:text-xl">
+                            Directly Contact
+                        </h5>
+                        <p class="text-center text-white text-sm md:text-base">
+                            We directly connect you to verified owners to save brokerage
+                        </p>
+                    </div>
+                    <div class="w-1/2 md:w-1/4 py-2 md:py-0 px-4">
+                        <img
+                            src="https://www.bdto-let.com/storage/icon/expert_guidance.png"
+                            alt=""
+                            class="mx-auto block"
+                        />
+                        <h5 class="text-center text-white my-2 text-lg md:text-xl">All Access</h5>
+                        <p class="text-center text-white text-sm md:text-base">
+                            You can delete and edit your property ad at any time
+                        </p>
+                    </div>
+                    <div class="w-1/2 md:w-1/4 py-2 md:py-0 px-4">
+                        <img
+                            src="https://www.bdto-let.com/storage/icon/verify.png"
+                            alt=""
+                            class="mx-auto block"
+                        />
+                        <h5 class="text-center text-white my-2 text-lg md:text-xl">
+                            Free property ad
+                        </h5>
+                        <p class="text-center text-white text-sm md:text-base">
+                            You can advertisement your property this platform absolutely free:
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========== How it works Section : END ========== -->
+
         <!-- ======= Footer Section : START =======-->
         <footer class="footer">
             <div class="footer__container container mx-auto">

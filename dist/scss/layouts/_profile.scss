@@ -1,6 +1,10 @@
 .profile {
     display: flex;
     width: 100%;
+    flex-direction: row;
+    @include breakpoint-down(small) {
+        flex-direction: column;
+    }
     &_side {
         box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
         border-radius: 10px;
@@ -27,10 +31,11 @@
         }
     }
     &_main {
-        padding: 0.75rem 1.25rem;
-        margin-bottom: 0;
-        background-color: rgba(0, 0, 0, 0.03);
-        border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+        border-radius: 10px;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid rgba(0, 0, 0, 0.125);
     }
 }
 
@@ -48,7 +53,146 @@
 .profile_main-body {
     flex: 1 1 auto;
     padding: 1.25rem;
+    @include breakpoint-down(small) {
+        padding: 1.25rem 0;
+    }
 }
 .table-bordered {
     border: 1px solid #dee2e6;
+}
+.profile_indicator {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #d8d8d8;
+    color: #383a3a;
+    font-weight: 400;
+    @include transitionsm;
+    &:hover {
+        color: $primary-color;
+    }
+}
+
+.profile_info-table {
+    th {
+        text-align: left;
+        padding: 5px 12px;
+        color: #363738;
+        font-size: 20px;
+        font-weight: 400;
+        @include breakpoint-down(small) {
+            font-size: 1rem;
+        }
+    }
+    td {
+        font-size: 1.3rem;
+        padding: 0 1rem;
+        @include breakpoint-down(small) {
+            font-size: 14px;
+            padding: 0 0.51rem;
+        }
+    }
+}
+
+.mainDiv {
+    display: flex;
+    min-height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    font-family: 'Open Sans', sans-serif;
+}
+.cardStyle {
+    width: 500px;
+    border-color: white;
+    background: #fff;
+    padding: 36px 0;
+    border-radius: 4px;
+    margin: 30px 0;
+    box-shadow: 0px 0 2px 0 rgba(0, 0, 0, 0.25);
+}
+#signupLogo {
+    max-height: 100px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.formTitle {
+    font-weight: 600;
+    margin-top: 20px;
+    color: #2f2d3b;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.inputLabel {
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 6px;
+    margin-top: 24px;
+}
+.inputDiv {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    @include breakpoint-down(small) {
+        width: 100%;
+    }
+}
+input {
+    height: 40px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    border: solid 1px #ccc;
+    padding: 0 11px;
+}
+input:disabled {
+    cursor: not-allowed;
+    border: solid 1px #eee;
+}
+.buttonWrapper {
+    margin-top: 40px;
+}
+.submitButton {
+    width: 70%;
+    height: 40px;
+    margin: auto;
+    display: block;
+    color: #fff;
+    background-color: $primary-color;
+    border-color: $primary-color;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.035);
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.submitButton:disabled,
+button[disabled] {
+    border: 1px solid #cccccc;
+    background-color: #cccccc;
+    color: #666666;
+}
+
+#loader {
+    position: absolute;
+    z-index: 1;
+    margin: -2px 0 0 10px;
+    border: 4px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 4px solid #666666;
+    width: 14px;
+    height: 14px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }

@@ -13,6 +13,9 @@
     width: 400px;
     margin: 0 auto;
     position: relative;
+    @include breakpoint-down(small) {
+        width: 100%;
+    }
 }
 .auth-logo {
     width: 100%;

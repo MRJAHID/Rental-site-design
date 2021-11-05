@@ -4,6 +4,10 @@
         width: 70%;
         text-align: center;
         margin: 0 auto;
+        @include breakpoint-down(small) {
+            width: 95%;
+            font-size: 1.4rem;
+        }
     }
 
     &__img {
@@ -24,15 +28,24 @@
             font-size: 4rem;
             color: #fff;
             font-weight: 400;
+            @include breakpoint-down(small) {
+                font-size: 2rem;
+            }
         }
         h3 {
             padding-bottom: 2rem;
             font-size: 1.3rem;
             color: #fff;
             font-weight: 400;
+            @include breakpoint-down(small) {
+                font-size: 1rem;
+            }
         }
     }
     &__search {
+        @include breakpoint-down(small) {
+            padding: 0 8px;
+        }
         form {
             width: 45rem;
             margin: 0 auto;
@@ -44,11 +57,17 @@
             display: flex;
             align-items: center;
             justify-content: space-around;
+            @include breakpoint-down(small) {
+                width: auto;
+            }
             .hero__search-select {
                 width: 15%;
                 background: white;
                 padding: 0 1rem;
                 border-right: 1px solid #d4c9c9;
+                @include breakpoint-down(small) {
+                    width: 30%;
+                }
                 &::after {
                     content: '';
                     position: absolute;

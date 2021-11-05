@@ -7,6 +7,9 @@
     top: -20px;
     background: #fff;
     z-index: 1;
+    @include breakpoint-down(small) {
+        background: transparent;
+    }
 }
 .timeline {
     position: relative;
@@ -32,6 +35,9 @@
     position: relative;
     width: 50%;
     padding: 40px 70px;
+    @include breakpoint-down(small) {
+        padding: 40px 30px;
+    }
 }
 
 .timeline ul li .right_content h2 {
@@ -39,6 +45,10 @@
     padding: 0px 2px 18px 0px;
     font-weight: 400;
     font-size: 2rem;
+    @include breakpoint-down(small) {
+        background: transparent;
+        font-size: 1.5rem;
+    }
 }
 .timeline ul li .right_content p {
     color: #ffffff;
@@ -94,7 +104,6 @@
     right: -200px;
     margin: 0;
     padding: 8px 16px;
-
     color: #fff;
     box-shadow: 0 0 0 3px rgba(59, 112, 239, 0.3);
     border-radius: 18px;
@@ -153,8 +162,15 @@
     padding-bottom: 3rem;
     h2 {
         font-size: 4rem;
+        @include breakpoint-down(small) {
+            font-size: 2.5rem;
+        }
     }
     p {
         font-size: 1.4rem;
+        @include breakpoint-down(small) {
+            font-size: 1.2rem;
+            padding: 0 4px;
+        }
     }
 }

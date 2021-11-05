@@ -13,6 +13,9 @@
             display: block;
             margin: 0.5rem 0;
             margin-top: 1.3rem;
+            @include breakpoint-down(small) {
+                font-size: 1.15rem;
+            }
         }
     }
     &__shortinfo {
@@ -33,6 +36,7 @@
             margin: 0;
             padding: 1.25rem 0;
             width: 100%;
+            flex-wrap: wrap;
         }
 
         #priceBedBathAreaInfoWrapper .column {
@@ -54,10 +58,16 @@
                 font-size: 1rem;
                 line-height: 1.125rem;
                 margin-bottom: 0.25rem;
+                @include breakpoint-down(small) {
+                    font-size: 0.9rem;
+                }
             }
             p.rentInfoDetail {
                 color: #000;
                 font-size: 1.125rem;
+                @include breakpoint-down(small) {
+                    font-size: 1rem;
+                }
             }
         }
         #priceBedBathAreaInfoWrapper .column:not(:last-child)::after {
@@ -96,15 +106,14 @@
 }
 
 .row-feature {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
     justify-content: space-between;
     height: auto;
+    flex-direction: row;
+    @include breakpoint-down(small) {
+        width: 99%;
+        flex-direction: column;
+    }
 }
 
 .row-feature .feature-bloc {
@@ -112,6 +121,9 @@
     border: 1px solid rgba(241, 241, 241, 1);
     padding: 20px 20px 0;
     border-radius: 2px;
+    @include breakpoint-down(small) {
+        width: 99%;
+    }
 }
 
 .feature-bloc-content-title-name {
