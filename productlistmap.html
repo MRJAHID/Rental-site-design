@@ -28,9 +28,13 @@
     <body class="antialiased bg-white">
         <!-- ======= Header : START =======-->
         <header class="container px-2 mx-auto header border-b border-gray-200">
-            <div class="header__container flex items-center justify-between h-16">
+            <div class="header__container flex items-center justify-between h-12 md:h-16">
                 <div class="header__left flex items-center">
-                    <picture class="header__logo mr-5">
+                    <picture class="header__logo mr-5 flex items-center">
+                        <button class="block md:hidden px-3 pt-1">
+                            <i class="fas fa-bars" style="color: rgb(82 76 76)"></i>
+                        </button>
+
                         <svg data-tid="rentals-logo" width="144" height="25" viewBox="0 0 144 25">
                             <path
                                 fill="#D92228"
@@ -39,7 +43,7 @@
                             ></path>
                         </svg>
                     </picture>
-                    <nav class="header__nav">
+                    <nav class="header__nav hidden md:inline-block">
                         <ul class="flex items-center">
                             <li><a href="#">Buy</a></li>
                             <li><a href="#">Sell</a></li>
@@ -51,12 +55,15 @@
                     </nav>
                 </div>
                 <div class="header__right flex">
-                    <div class="header__login">
+                    <div class="header__login hidden md:block">
                         <a href="#">Login</a>
                     </div>
-                    <div class="header__signup">
+                    <div class="header__signup hidden md:block">
                         <a href="#">Signup</a>
                     </div>
+                    <button class="flex mobile_profile-icon md:hidden px-3 pt-1">
+                        <i class="far fa-user"></i>
+                    </button>
                 </div>
             </div>
         </header>
@@ -68,8 +75,8 @@
                 <section class="productlist__wrap">
                     <header class="productlist__header">
                         <div class="productlist__header-container">
-                            <div class="flex">
-                                <div class="">
+                            <div class="flex flex-wrap md:flex-nowrap">
+                                <div class="py-2 md:py-0">
                                     <div class="productlist__header-search">
                                         <div class="search-box">
                                             <input
@@ -84,7 +91,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="">
+                                <div class="py-2 md:py-0">
                                     <div class="productlist__header-selectbox">
                                         <select>
                                             <option selected disabled>Price</option>
@@ -98,7 +105,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="">
+                                <div class="py-2 md:py-0">
                                     <div class="productlist__header-selectbox">
                                         <select>
                                             <option selected disabled>Property Type</option>
@@ -112,7 +119,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="">
+                                <div class="py-2 md:py-0">
                                     <div class="productlist__header-selectbox">
                                         <select>
                                             <option selected disabled>Beds</option>
@@ -126,7 +133,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="">
+                                <div class="py-2 md:py-0">
                                     <div class="productlist__header-selectbox">
                                         <select>
                                             <option selected disabled>Baths</option>
@@ -140,7 +147,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="">
+                                <div class="py-2 md:py-0">
                                     <div class="productlist__header-selectbox">
                                         <select>
                                             <option selected disabled>Listing Status</option>
@@ -155,7 +162,7 @@
                                     </div>
                                 </div>
 
-                                <div>
+                                <div class="flex items-center">
                                     <button class="productlist__header-btn" type="button">
                                         Save Search
                                     </button>
@@ -211,14 +218,15 @@
                         </div>
                     </header>
                     <div class="productlist__body">
-                        <div class="flex">
+                        <div class="flex flex-col-reverse md:flex-row">
                             <!-- ======= Best Property Section : START =======-->
                             <section
                                 class="
                                     product__panel
                                     container
                                     mx-auto
-                                    w-2/4
+                                    w-full
+                                    md:w-2/4
                                     pr-4
                                     h-screen
                                     overflow-x-hidden
@@ -838,7 +846,7 @@
                             <!-- ======= Best Property Section : END =======-->
 
                             <!-- ======= Map Section : END =======-->
-                            <div class="productlist__map w-2/4">
+                            <div class="productlist__map w-full md:w-2/4">
                                 <div class="responsive-map">
                                     <iframe
                                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2822.7806761080233!2d-93.29138368446431!3d44.96844997909819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b32b6ee2c87c91%3A0xc20dff2748d2bd92!2sWalker+Art+Center!5e0!3m2!1sen!2sus!4v1514524647889"

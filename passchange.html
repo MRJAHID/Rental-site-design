@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>404 | Rental</title>
+        <title>Change Password | Rental</title>
         <!-- Rubik Font -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -70,406 +70,114 @@
         </header>
         <!-- ======= Header : END =======-->
 
-        <!-- ======= Hero Section : START =======-->
-        <section class="hero">
-            <div class="hero__wrapper relative">
-                <!-- Hero Image -->
-                <picture class="w-full hero__img">
-                    <img
-                        class="w-full object-cover"
-                        src="https://www.athome.lu/client-portal/img/splash.jpg"
-                        alt=""
-                    />
-                </picture>
-                <!-- Hero Image Text -->
-                <div class="hero__content">
-                    <div class="hero__text">
-                        <h3 class="title_404">
-                            Sorry, we couldn't find the page you're trying to view. You can just
-                            specify the new search criteria.
-                        </h3>
+        <!-- ======= profile Section : START =======-->
+
+        <section class="container mx-auto my-8">
+            <div class="profile">
+                <!-- Side -->
+                <div class="profile_side w-full md:w-1/4 my-3 md:my-0 mx-0 md:mx-2 px-2 md:px-0">
+                    <div class="profile_side-header bg-transparent text-center">
+                        <img
+                            class="profile_img"
+                            src="https://source.unsplash.com/600x300/?student"
+                            alt="student dp"
+                        />
+                        <h3 class="profile_name">Anisul Haque Bhuiyan</h3>
                     </div>
-                    <!-- Hero Image Search Box -->
-                    <div class="hero__search">
-                        <form action="">
-                            <select name="" id="" class="hero__search-select">
-                                <option value="">Buy</option>
-                                <option value="">Rent</option>
-                                <option value="">Sell</option>
-                            </select>
-                            <input type="text" placeholder="Address" class="hero__search-input" />
-                            <button class="hero__search-btn">
-                                <div class="_14lk9e14">
-                                    <svg
-                                        viewBox="0 0 32 32"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        aria-hidden="true"
-                                        role="presentation"
-                                        focusable="false"
-                                        style="
-                                            display: block;
-                                            fill: none;
-                                            height: 16px;
-                                            width: 16px;
-                                            stroke: currentcolor;
-                                            stroke-width: 4;
-                                            overflow: visible;
-                                        "
-                                    >
-                                        <g fill="none">
-                                            <path
-                                                d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9"
-                                            ></path>
-                                        </g>
-                                    </svg>
+
+                    <div class="">
+                        <div class="bg-transparent profile_indicator text-left">
+                            <span><i class="fas fa-xs fa-angle-double-right"></i></span>
+                            <a href="#" class="profile_name">My Profile</a>
+                        </div>
+                        <div class="bg-transparent profile_indicator text-left">
+                            <span><i class="fas fa-xs fa-angle-double-right"></i></span>
+                            <a href="#" class="profile_name">My Property</a>
+                        </div>
+                        <div class="bg-transparent profile_indicator text-left">
+                            <span><i class="fas fa-xs fa-angle-double-right"></i></span>
+                            <a href="#" class="profile_name">Add Property</a>
+                        </div>
+                        <div class="bg-transparent profile_indicator text-left">
+                            <span><i class="fas fa-xs fa-angle-double-right"></i></span>
+                            <a href="#" class="profile_name">All Property</a>
+                        </div>
+                        <div class="bg-transparent profile_indicator text-left">
+                            <span><i class="fas fa-xs fa-angle-double-right"></i></span>
+                            <a href="#" class="profile_name">Change Password</a>
+                        </div>
+                        <div class="bg-transparent profile_indicator text-left">
+                            <span><i class="fas fa-xs fa-angle-double-right"></i></span>
+                            <a href="#" class="profile_name">Logout</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main -->
+                <div class="profile_main w-full md:w-3/4 my-3 md:my-0 mx-0 md:mx-4 px-2 md:px-0">
+                    <div class="profile_wrap">
+                        <div class="profile_main-header bg-transparent border-0">
+                            <h3 class="mb-0">
+                                <i class="far fa-clone pr-1"></i>Change Your Password
+                            </h3>
+                        </div>
+                        <div class="profile_main-body pt-0">
+                            <table class="table profile_info-table table-bordered">
+                                <div class="mainDiv">
+                                    <div class="cardStyle">
+                                        <form
+                                            action=""
+                                            method="post"
+                                            name="signupForm"
+                                            id="signupForm"
+                                        >
+                                            <h2 class="formTitle">Login to your account</h2>
+
+                                            <div class="inputDiv">
+                                                <label class="inputLabel" for="password"
+                                                    >New Password</label
+                                                >
+                                                <input
+                                                    type="password"
+                                                    id="password"
+                                                    name="password"
+                                                    required
+                                                />
+                                            </div>
+
+                                            <div class="inputDiv">
+                                                <label class="inputLabel" for="confirmPassword"
+                                                    >Confirm Password</label
+                                                >
+                                                <input
+                                                    type="password"
+                                                    id="confirmPassword"
+                                                    name="confirmPassword"
+                                                />
+                                            </div>
+
+                                            <div class="buttonWrapper">
+                                                <button
+                                                    type="submit"
+                                                    id="submitButton"
+                                                    class="
+                                                        submitButton
+                                                        pure-button pure-button-primary
+                                                    "
+                                                >
+                                                    <span>Continue</span>
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ======= Hero Section : END =======-->
-
-        <!-- ======= Best Property Section : START =======-->
-        <section class="product__panel container mx-auto">
-            <div class="text-center mb-6">
-                <h3 class="section-title flex items-center justify-center">
-                    <span class="mx-2">Newest Property</span>
-                </h3>
-                <!-- <span class="section-subtitle"
-                    >Buy kitchen essential cookware, frypan, home décor products, home appliance
-                    from iferi.</span
-                > -->
-            </div>
-            <div class="product__wrapper">
-                <div class="product">
-                    <picture class="product__picture relative">
-                        <img
-                            src="https://images1.apartments.com/i2/dKTmWMgEmGlbmmkdubcxEKBTA5RoNKAbCcD7QtP7Kb0/118/the-van-buren-chicago-il-spacious-layouts.jpg"
-                            alt="Property Image"
-                        />
-                        <small class="small_label"> Office </small>
-                    </picture>
-                    <div class="product__content">
-                        <a href="#" class="product__title">Flat Rent At Dhanmondi</a>
-                        <h4 class="product__price">৳40000</h4>
-                        <p class="product__address">
-                            <span><i class="fas fa-map-marker-alt"></i></span> Block F, Bashundhara
-                            R-A, Dhaka
-                        </p>
-                        <p class="flex items-center product__size">
-                            <span class="pr-2"><i class="fas fa-shower"></i> 2 </span>
-                            <span class="pr-2"><i class="fas fa-bed"></i> 4</span>
-                            <span class="pr-2"
-                                ><i class="fas fa-ruler-combined"></i> 1,830 sqft
-                            </span>
-                        </p>
-                        <div class="product__contact">
-                            <a href="#"><i class="fas fa-phone"></i> Call</a>
-                            <a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-                            <a href="#"><i class="far fa-envelope"></i> Email</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="product">
-                    <picture class="product__picture relative">
-                        <img
-                            src="https://images1.apartments.com/i2/dKTmWMgEmGlbmmkdubcxEKBTA5RoNKAbCcD7QtP7Kb0/118/the-van-buren-chicago-il-spacious-layouts.jpg"
-                            alt="Property Image"
-                        />
-                        <small class="small_label"> Office </small>
-                    </picture>
-                    <div class="product__content">
-                        <a href="#" class="product__title">Flat Rent At Dhanmondi</a>
-                        <h4 class="product__price">৳40000</h4>
-                        <p class="product__address">
-                            <span><i class="fas fa-map-marker-alt"></i></span> Block F, Bashundhara
-                            R-A, Dhaka
-                        </p>
-                        <p class="flex items-center product__size">
-                            <span class="pr-2"><i class="fas fa-shower"></i> 2 </span>
-                            <span class="pr-2"><i class="fas fa-bed"></i> 4</span>
-                            <span class="pr-2"
-                                ><i class="fas fa-ruler-combined"></i> 1,830 sqft
-                            </span>
-                        </p>
-                        <div class="product__contact">
-                            <a href="#"><i class="fas fa-phone"></i> Call</a>
-                            <a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-                            <a href="#"><i class="far fa-envelope"></i> Email</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="product">
-                    <picture class="product__picture relative">
-                        <img
-                            src="https://images1.apartments.com/i2/dKTmWMgEmGlbmmkdubcxEKBTA5RoNKAbCcD7QtP7Kb0/118/the-van-buren-chicago-il-spacious-layouts.jpg"
-                            alt="Property Image"
-                        />
-                        <small class="small_label"> Office </small>
-                    </picture>
-                    <div class="product__content">
-                        <a href="#" class="product__title">Flat Rent At Dhanmondi</a>
-                        <h4 class="product__price">৳40000</h4>
-                        <p class="product__address">
-                            <span><i class="fas fa-map-marker-alt"></i></span> Block F, Bashundhara
-                            R-A, Dhaka
-                        </p>
-                        <p class="flex items-center product__size">
-                            <span class="pr-2"><i class="fas fa-shower"></i> 2 </span>
-                            <span class="pr-2"><i class="fas fa-bed"></i> 4</span>
-                            <span class="pr-2"
-                                ><i class="fas fa-ruler-combined"></i> 1,830 sqft
-                            </span>
-                        </p>
-                        <div class="product__contact">
-                            <a href="#"><i class="fas fa-phone"></i> Call</a>
-                            <a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-                            <a href="#"><i class="far fa-envelope"></i> Email</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="product">
-                    <picture class="product__picture relative">
-                        <img
-                            src="https://images1.apartments.com/i2/dKTmWMgEmGlbmmkdubcxEKBTA5RoNKAbCcD7QtP7Kb0/118/the-van-buren-chicago-il-spacious-layouts.jpg"
-                            alt="Property Image"
-                        />
-                        <small class="small_label"> Office </small>
-                    </picture>
-                    <div class="product__content">
-                        <a href="#" class="product__title">Flat Rent At Dhanmondi</a>
-                        <h4 class="product__price">৳40000</h4>
-                        <p class="product__address">
-                            <span><i class="fas fa-map-marker-alt"></i></span> Block F, Bashundhara
-                            R-A, Dhaka
-                        </p>
-                        <p class="flex items-center product__size">
-                            <span class="pr-2"><i class="fas fa-shower"></i> 2 </span>
-                            <span class="pr-2"><i class="fas fa-bed"></i> 4</span>
-                            <span class="pr-2"
-                                ><i class="fas fa-ruler-combined"></i> 1,830 sqft
-                            </span>
-                        </p>
-                        <div class="product__contact">
-                            <a href="#"><i class="fas fa-phone"></i> Call</a>
-                            <a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-                            <a href="#"><i class="far fa-envelope"></i> Email</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="product">
-                    <picture class="product__picture relative">
-                        <img
-                            src="https://images1.apartments.com/i2/dKTmWMgEmGlbmmkdubcxEKBTA5RoNKAbCcD7QtP7Kb0/118/the-van-buren-chicago-il-spacious-layouts.jpg"
-                            alt="Property Image"
-                        />
-                        <small class="small_label"> Office </small>
-                    </picture>
-                    <div class="product__content">
-                        <a href="#" class="product__title">Flat Rent At Dhanmondi</a>
-                        <h4 class="product__price">৳40000</h4>
-                        <p class="product__address">
-                            <span><i class="fas fa-map-marker-alt"></i></span> Block F, Bashundhara
-                            R-A, Dhaka
-                        </p>
-                        <p class="flex items-center product__size">
-                            <span class="pr-2"><i class="fas fa-shower"></i> 2 </span>
-                            <span class="pr-2"><i class="fas fa-bed"></i> 4</span>
-                            <span class="pr-2"
-                                ><i class="fas fa-ruler-combined"></i> 1,830 sqft
-                            </span>
-                        </p>
-                        <div class="product__contact">
-                            <a href="#"><i class="fas fa-phone"></i> Call</a>
-                            <a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-                            <a href="#"><i class="far fa-envelope"></i> Email</a>
+                            </table>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- ======= Best Property Section : END =======-->
-
-        <!-- ========== Popular Search Section : START ========== -->
-        <section class="mx-auto container">
-            <div class="popular__search">
-                <div class="text-center mb-4">
-                    <h3 class="section-title flex items-center justify-center">
-                        <span class="mx-2">BROWSE PROPERTIES BY LOCALITIES</span>
-                    </h3>
-                    <!-- <span class="section-subtitle"
-                        >Buy kitchen essential cookware, frypan, home décor products, home appliance
-                        from iferi.</span
-                    > -->
-                </div>
-                <div class="flex w-full">
-                    <div class="w-full">
-                        <h2
-                            style="
-                                font-weight: 400;
-                                font-size: 0.9rem;
-                                border-bottom: 0.1rem solid #999;
-                                padding: 0.5rem 0;
-                                line-height: 1.38;
-                            "
-                        >
-                            Properties in top cities
-                        </h2>
-
-                        <ul class="flex flex-wrap pl-0">
-                            <li class="w-1/3 md:w-1/4">
-                                <a href="/search/?city=1" class="cs-link">Dhaka (2419) </a>
-                            </li>
-
-                            <li class="w-1/3 md:w-1/4">
-                                <a href="/search/?city=9" class="cs-link">Gazipur (104) </a>
-                            </li>
-
-                            <li class="w-1/3 md:w-1/4">
-                                <a href="/search/?city=4" class="cs-link">Chittagong (90) </a>
-                            </li>
-
-                            <li class="w-1/3 md:w-1/4">
-                                <a href="/search/?city=10" class="cs-link">Narayanganj (42) </a>
-                            </li>
-
-                            <li class="w-1/3 md:w-1/4">
-                                <a href="/search/?city=5" class="cs-link">Sylhet (34) </a>
-                            </li>
-
-                            <li class="w-1/3 md:w-1/4">
-                                <a href="/search/?city=6" class="cs-link">Rajshahi (33) </a>
-                            </li>
-
-                            <li class="w-1/3 md:w-1/4">
-                                <a href="/search/?city=7" class="cs-link">Rangpur (27) </a>
-                            </li>
-
-                            <li class="w-1/3 md:w-1/4">
-                                <a href="/search/?city=18" class="cs-link">Mymensingh (24) </a>
-                            </li>
-
-                            <li class="w-1/3 md:w-1/4">
-                                <a href="/search/?city=11" class="cs-link">Comilla (15) </a>
-                            </li>
-
-                            <li class="w-1/3 md:w-1/4">
-                                <a href="/search/?city=3" class="cs-link">Khulna (13) </a>
-                            </li>
-
-                            <li class="w-1/3 md:w-1/4">
-                                <a href="/search/?city=16" class="cs-link">Coxs Bazar (11) </a>
-                            </li>
-
-                            <li class="w-1/3 md:w-1/4">
-                                <a href="/search/?city=17" class="cs-link">Tangail (9) </a>
-                            </li>
-
-                            <li class="w-1/3 md:w-1/4">
-                                <a href="/search/?city=12" class="cs-link">Bogra (4) </a>
-                            </li>
-
-                            <li class="w-1/3 md:w-1/4">
-                                <a href="/search/?city=14" class="cs-link">Kuakata (3) </a>
-                            </li>
-
-                            <li class="w-1/3 md:w-1/4">
-                                <a href="/search/?city=8" class="cs-link">Barisal (3) </a>
-                            </li>
-
-                            <li class="w-1/3 md:w-1/4">
-                                <a href="/search/?city=19" class="cs-link">Naogaon (2) </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="flex w-full">
-                    <div class="w-full">
-                        <h2
-                            style="
-                                font-weight: 400;
-                                font-size: 0.9rem;
-                                border-bottom: 0.1rem solid #999;
-                                padding: 0.5rem 0;
-                                line-height: 1.38;
-                            "
-                        >
-                            Properties in top cities
-                        </h2>
-
-                        <ul class="flex flex-wrap pl-0">
-                            <li class="w-1/3 md:w-1/4">
-                                <a href="/search/?city=1" class="cs-link">Dhaka (2419) </a>
-                            </li>
-
-                            <li class="w-1/3 md:w-1/4">
-                                <a href="/search/?city=9" class="cs-link">Gazipur (104) </a>
-                            </li>
-
-                            <li class="w-1/3 md:w-1/4">
-                                <a href="/search/?city=4" class="cs-link">Chittagong (90) </a>
-                            </li>
-
-                            <li class="w-1/3 md:w-1/4">
-                                <a href="/search/?city=10" class="cs-link">Narayanganj (42) </a>
-                            </li>
-
-                            <li class="w-1/3 md:w-1/4">
-                                <a href="/search/?city=5" class="cs-link">Sylhet (34) </a>
-                            </li>
-
-                            <li class="w-1/3 md:w-1/4">
-                                <a href="/search/?city=6" class="cs-link">Rajshahi (33) </a>
-                            </li>
-
-                            <li class="w-1/3 md:w-1/4">
-                                <a href="/search/?city=7" class="cs-link">Rangpur (27) </a>
-                            </li>
-
-                            <li class="w-1/3 md:w-1/4">
-                                <a href="/search/?city=18" class="cs-link">Mymensingh (24) </a>
-                            </li>
-
-                            <li class="w-1/3 md:w-1/4">
-                                <a href="/search/?city=11" class="cs-link">Comilla (15) </a>
-                            </li>
-
-                            <li class="w-1/3 md:w-1/4">
-                                <a href="/search/?city=3" class="cs-link">Khulna (13) </a>
-                            </li>
-
-                            <li class="w-1/3 md:w-1/4">
-                                <a href="/search/?city=16" class="cs-link">Coxs Bazar (11) </a>
-                            </li>
-
-                            <li class="w-1/3 md:w-1/4">
-                                <a href="/search/?city=17" class="cs-link">Tangail (9) </a>
-                            </li>
-
-                            <li class="w-1/3 md:w-1/4">
-                                <a href="/search/?city=12" class="cs-link">Bogra (4) </a>
-                            </li>
-
-                            <li class="w-1/3 md:w-1/4">
-                                <a href="/search/?city=14" class="cs-link">Kuakata (3) </a>
-                            </li>
-
-                            <li class="w-1/3 md:w-1/4">
-                                <a href="/search/?city=8" class="cs-link">Barisal (3) </a>
-                            </li>
-
-                            <li class="w-1/3 md:w-1/4">
-                                <a href="/search/?city=19" class="cs-link">Naogaon (2) </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ========== Popular Search Section : END ========== -->
-
+        <!-- ======= profile Section : START =======-->
         <!-- ========== How it works Section : START ========== -->
         <section class="">
             <div class="h-how-it-work pb-6">
@@ -828,97 +536,5 @@
             </div>
         </footer>
         <!-- ======= Footer Section : END =======-->
-        <!-- ======= Mobile Menu : Start =======-->
-        <div
-            class="
-                fixed
-                left-0
-                top-0
-                z-10
-                xl:hidden
-                bg-black
-                h-full
-                w-full
-                bg-opacity-25
-                opacity-0
-                invisible
-                transition-all
-                duration-500
-            "
-            id="sidebar_wrapper"
-        >
-            <div
-                class="top-0 fixed h-full w-72 z-10 bg-white shadow-md flex flex-col px-4 space-y-4"
-            >
-                <!-- logo start  -->
-                <picture class="mt-4">
-                    <svg data-tid="rentals-logo" width="144" height="25" viewBox="0 0 144 25">
-                        <path
-                            fill="#D92228"
-                            fill-rule="evenodd"
-                            d="M141.026 17.026c0-.57.42-.984.947-.984.52 0 .946.413.946.984 0 .574-.426.99-.946.99-.527 0-.947-.416-.947-.99zm-.343 0c0 .765.61 1.258 1.29 1.258.681 0 1.289-.493 1.289-1.258 0-.762-.608-1.253-1.289-1.253-.68 0-1.29.49-1.29 1.253zm1.068-.118v-.37h.236c.127 0 .288.024.288.175 0 .172-.118.195-.276.195h-.248zm.252-.588h-.53v1.407h.278v-.601h.175l.342.601h.292l-.376-.614c.208-.017.37-.118.37-.376 0-.306-.199-.417-.55-.417zm-3.204 8.217h-1.627v-4.77c0-1.302-.271-2.493-1.843-2.493-1.57 0-2.184 1.066-2.184 2.582v4.68h-1.628v-4.48c0-1.625-.235-2.782-1.807-2.782-1.175 0-2.222.882-2.222 2.818v4.445h-1.626v-8.564h1.517v1.336h.037c.162-.506 1.21-1.554 2.746-1.554 1.266 0 2.133.54 2.675 1.59.56-1.05 1.68-1.59 2.71-1.59 2.637 0 3.252 1.879 3.252 3.795v4.987zm-21.689-4.282c0-1.735 1.083-2.98 2.818-2.98 1.734 0 2.818 1.245 2.818 2.98 0 1.734-1.084 2.98-2.818 2.98-1.735 0-2.818-1.246-2.818-2.98zm-1.735 0c0 2.492 2.005 4.498 4.553 4.498s4.553-2.006 4.553-4.498c0-2.495-2.005-4.5-4.553-4.5s-4.553 2.005-4.553 4.5zm-3.76 2.98c.901 0 1.534-.325 2.078-.958l1.154 1.158c-.849.94-2.004 1.319-3.253 1.319-2.638 0-4.479-1.825-4.479-4.462 0-2.64 1.806-4.519 4.48-4.519 1.248 0 2.44.435 3.288 1.355l-1.227 1.12c-.597-.632-1.23-.957-2.132-.957-1.77 0-2.675 1.427-2.675 3.035 0 1.609 1.084 2.91 2.765 2.91zm-6.69 1.45c-.65 0-1.193-.541-1.193-1.193 0-.65.542-1.191 1.192-1.191.651 0 1.192.54 1.192 1.19 0 .653-.54 1.194-1.192 1.194zM5.057 12.05V5.885c.367-.1 1.066-.167 2.3-.167 2.332 0 3.732 1.067 3.732 3.1 0 1.965-1.5 3.233-4.033 3.233h-2zm7.148 1.964c-.042-.017-.042-.086 0-.102 1.94-.699 3.959-2.606 3.965-5.45.017-7.146-8.853-7.34-15.896-6.16-.144.025-.275.15-.275.295v21.656c0 .165.108.318.273.319h4.45c.166 0 .3-.142.301-.308l.02-8.563 1.506.004c2.106.038 3.074.777 3.703 3.62.578 2.554 1.102 4.316 1.441 5.078a.29.29 0 0 0 .273.169h4.58c.098 0 .19-.028.245-.108a.299.299 0 0 0 .037-.274c-.426-1.175-1.011-3.724-1.624-5.99-.564-2.074-1.43-3.548-3-4.186zm82.927 10.971c-2.111 0-4.43-.505-5.993-1.939a.298.298 0 0 1-.02-.42l2.537-2.818a.3.3 0 0 1 .442 0c.865.948 1.883 1.473 3.231 1.473 1.103 0 2.21-.294 2.21-1.138 0-2.534-8.224-.39-8.224-6.403 0-3.704 3.318-5.329 6.63-5.329 1.98 0 4.165.471 5.634 1.861a.298.298 0 0 1 .004.429l-2.552 2.523a.298.298 0 0 1-.426-.007c-.688-.725-1.563-1.102-2.625-1.102-.813 0-1.79.359-1.79 1.3 0 2.34 8.222.36 8.222 6.37 0 4.029-3.9 5.2-7.28 5.2zm-7.866-.717a.298.298 0 0 1-.298.298h-4.278a.298.298 0 0 1-.298-.298V.299c0-.165.133-.299.298-.299h4.278c.165 0 .298.134.298.298v23.97zm-11.751-5.816c0 1.95-1.786 3.189-3.706 3.189-1.07 0-2.306-.553-2.306-1.721 0-2.146 3.315-2.277 4.81-2.277h1.082a.12.12 0 0 1 .12.12v.689zm-9.45-7.746a.299.299 0 0 0-.018.433l2.164 2.218a.297.297 0 0 0 .428 0c1.007-1.035 2.268-1.66 3.755-1.66 1.69 0 3.12 1.107 3.12 2.828-4.061 0-10.69.097-10.69 5.557 0 3.185 2.663 4.875 5.62 4.875 1.984 0 3.932-.685 5.006-2.374h.065v1.686c0 .164.133.298.298.298h3.889a.298.298 0 0 0 .298-.298v-7.73c0-5.264-1.528-8.352-7.215-8.352-2.458 0-4.944.97-6.72 2.519zm-2.606 1.661a.298.298 0 0 1-.298.299h-3.99v5.263c0 1.69.194 2.924 2.306 2.924.393 0 1.083-.037 1.579-.223a.297.297 0 0 1 .403.28v3.34c0 .13-.083.243-.206.283-1.02.33-2.142.416-3.206.416-3.25 0-5.753-1.333-5.753-4.777v-7.506h-2.82a.298.298 0 0 1-.298-.299V9.065c0-.165.133-.298.298-.298h2.82V4.384c0-.165.134-.298.299-.298h4.279c.165 0 .298.133.298.298v4.383h3.991c.164 0 .298.133.298.298v3.303zM50.12 24.285a.298.298 0 0 1-.297.298h-4.277a.298.298 0 0 1-.299-.298v-7.437c0-1.82-.033-4.158-2.536-4.158-2.535 0-2.924 1.982-2.924 4.03v7.565a.299.299 0 0 1-.299.298H35.21a.298.298 0 0 1-.298-.298V9.088c0-.165.133-.298.298-.298h4.083c.164 0 .298.133.298.298v1.846h.065C40.306 9.699 41.9 8.4 44.272 8.4c4.937 0 5.849 3.249 5.849 7.473v8.412zm-28.344-9.41c.13-1.526 1.3-2.989 3.444-2.989 1.757 0 3.023 1.366 2.991 2.989h-6.435zm-4.874 1.79c0 5.035 3.9 8.285 8.773 8.285 2.428 0 4.884-1.042 6.456-2.871a.298.298 0 0 0-.05-.436l-2.92-2.143a.299.299 0 0 0-.41.054c-.791.988-1.823 1.692-3.303 1.692-1.885 0-3.282-1.204-3.672-3.054h11.011a.299.299 0 0 0 .298-.298v-1.23c0-5.037-2.927-8.296-7.477-8.296-5.136 0-8.706 3.259-8.706 8.296z"
-                        ></path>
-                    </svg>
-                </picture>
-                <!-- logo end  -->
-
-                <!-- links start -->
-                <div class="text-gray-600 space-y-4 items-center">
-                    <a href="#" class="flex hover:text-red-400">
-                        <span class="mr-2">
-                            <i class="fas fa-store-alt"></i>
-                        </span>
-                        <span>Buy</span>
-                    </a>
-                    <a href="#" class="flex hover:text-red-400">
-                        <span class="mr-2">
-                            <i class="fas fa-check-double"></i>
-                        </span>
-                        <span>Sell</span>
-                    </a>
-                    <a href="#" class="flex hover:text-red-400">
-                        <span class="mr-2">
-                            <i class="fas fa-house-user"></i>
-                        </span>
-                        <span>Rent</span>
-                    </a>
-                    <a href="#" class="flex hover:text-red-400">
-                        <span class="mr-2">
-                            <i class="fas fa-map-marked-alt"></i>
-                        </span>
-                        <span>Add Property</span>
-                    </a>
-                    <a href="#" class="flex hover:text-red-400">
-                        <span class="mr-2">
-                            <i class="fas fa-store-alt"></i>
-                        </span>
-                        <span>All Property</span>
-                    </a>
-                    <a href="#" class="flex hover:text-red-400">
-                        <span class="mr-2">
-                            <i class="fas fa-heart"></i>
-                        </span>
-                        <span>Favourites</span>
-                    </a>
-                </div>
-                <!-- links end -->
-            </div>
-        </div>
-        <!-- ======= Mobile Menu : END =======-->
-        <script>
-            document.querySelector('#open_sidebar').addEventListener('click', function () {
-                document.querySelector('#sidebar_wrapper').classList.remove('opacity-0');
-                document.querySelector('#sidebar_wrapper').classList.remove('invisible');
-            });
-
-            document.body.addEventListener('click', function (e) {
-                if (e.target.id === 'sidebar_wrapper') {
-                    // document.querySelector('#sidebar').classList.add('-left-80')
-                    // document.querySelector('#sidebar').classList.remove('left-0')
-                    document.querySelector('#sidebar_wrapper').classList.add('opacity-0');
-                    document.querySelector('#sidebar_wrapper').classList.add('invisible');
-                }
-            });
-        </script>
     </body>
 </html>
